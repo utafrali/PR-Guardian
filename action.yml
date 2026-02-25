@@ -1,0 +1,24 @@
+name: 'PR Guardian'
+description: 'AI-powered pull request review with Claude'
+author: 'Ugur Tafrali'
+
+branding:
+  icon: 'shield'
+  color: 'purple'
+
+inputs:
+  anthropic_api_key:
+    description: 'Anthropic API key for Claude (required when provider is api)'
+    required: false
+  github_token:
+    description: 'GitHub token (defaults to GITHUB_TOKEN)'
+    required: false
+    default: ${{ github.token }}
+  config_path:
+    description: 'Path to .pr-guardian.yml config file'
+    required: false
+    default: '.pr-guardian.yml'
+
+runs:
+  using: 'node20'
+  main: 'action/dist/index.js'
