@@ -122,6 +122,10 @@ Ways to contribute:
 - Improve AI review prompts
 - Add integrations (Slack, JIRA, etc.)
 
+## Privacy
+
+PR Guardian does not store any data. All processing is ephemeral. See our [Privacy Policy](docs/privacy-policy.md).
+
 ## License
 
 MIT
